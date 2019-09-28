@@ -39,13 +39,13 @@ public class SegundoFragment extends Fragment {
 
         if (!getArguments().isEmpty()){
 
-            Animal carro = getArguments().getParcelable(ANIMAL_KEY);
+            Animal animal = getArguments().getParcelable(ANIMAL_KEY);
 
-            if (carro != null){
-                Drawable drawable = getResources().getDrawable(carro.getImagem());
+            if (animal != null){
+                Drawable drawable = getResources().getDrawable(animal.getImagem());
 
                 imagem.setImageDrawable(drawable);
-                texto.setText(carro.getNome());
+                texto.setText(animal.getNome());
             }
         }
 
